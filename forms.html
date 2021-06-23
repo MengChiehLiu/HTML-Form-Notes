@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>forms</title>
+    <h1>Choose name</h1>
+</head>
+<body>
+<select name="d" method="GET" action="/">
+{% for x, y in table %}
+        <option value="{{ x }}">{{ y }}</option>
+    {% endfor %}
+</select>
+</body>
+</html>
