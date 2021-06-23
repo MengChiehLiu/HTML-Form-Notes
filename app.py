@@ -10,7 +10,7 @@ DATABASE_URL = os.environ.get("DATABASE_URL")
 
 @app.route("/home") #根目錄
 def test():
-    return render_template("cover.html")
+    return "Hello"
 
 @app.route("/forms", methods=['GET']) #根目錄
 def forms():
