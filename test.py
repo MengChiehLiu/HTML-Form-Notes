@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return render_template('cover.html')
+    return "Hello"
 
 @app.route('/forms', methods=['GET'])
 def api_services():
